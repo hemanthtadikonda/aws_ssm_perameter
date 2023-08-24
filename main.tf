@@ -6,9 +6,7 @@ resource "aws_ssm_parameter" "docdb" {
 }
 
 output "master_username" {
-  value = data.aws_ssm_parameter.master_username
+  value = aws_ssm_parameter.docdb
 }
 
-output "master_password" {
-  value = data.aws_ssm_parameter.master_password
-}
+
