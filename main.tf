@@ -6,10 +6,12 @@ resource "aws_ssm_parameter" "docdb" {
 }
 
 output "master_username" {
+  sensitive = true
   value = data.aws_ssm_parameter.master_username
 }
 
 
 output "master_password" {
+  sensitive = true
   value = data.aws_ssm_parameter.master_password
 }
