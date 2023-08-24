@@ -1,0 +1,2 @@
+# aws_ssm_perameter_
+aws_ssm_perameter_store
