@@ -5,8 +5,6 @@ resource "aws_ssm_parameter" "docdb" {
   value = each.value["value"]
 }
 
-output "master_username" {
-  value = aws_ssm_parameter.docdb
-}
+
 
 
