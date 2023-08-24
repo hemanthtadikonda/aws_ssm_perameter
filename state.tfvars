@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "tad-state"
-    key    = "ssm_parameter/state"
+    key    = "aws-parameters/terraform.tfstate"
     region = "us-east-1"
   }
 }
