@@ -1,3 +1,7 @@
-bucket = "tad-state"
-key    = "aws-parameters/terraform.tfstate"
-region = "us-east-1"
+terraform {
+  backend "s3" {
+    bucket = "tad-state"
+    key    = "aws/pera"
+    region = "us-east-1"
+  }
+}
