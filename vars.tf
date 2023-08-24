@@ -6,3 +6,6 @@ variable "docdb" {
     "docdb.dev.master_password" = { type = "String", value = "roboshop1234" }
   }
 }
+terraform {
+  backend "s3" {}
+}
