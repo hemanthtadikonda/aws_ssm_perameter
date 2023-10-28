@@ -29,7 +29,7 @@ variable "parameters" {
     "rds.dev.master_password"   = { type = "String" , value = "roboshop1234"}
 
     # nexus
-    "nexus.dev.username"      = { type =  "String" , value = "admin" }
+    "nexus.dev.username"      = { type = "String" , value = "admin" }
     "nexus.dev.password"      = { type  = "SecureString", value = "admin123" }
 
     # kubernetes
@@ -40,12 +40,12 @@ variable "parameters" {
     "docdb.dev.schema_setup"   = { type  = "SecureString", value = "mongo --host dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017 --sslCAFile rds-combined-ca-bundle.pem --username docdbadmin --password roboshop1234" }
     "sql.dev.schema_setup"     = { type  = "SecureString", value = "mysql -h dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com -udevrdsadmin -proboshop1234" }
 
-    "shipping.dev.CART_ENDPOINT" = { type =  "String" , value = "cart:8080" }
+    "shipping.dev.CART_ENDPOINT" = { type = "String" , value = "cart:8080" }
     "shipping.dev.DB_HOST"        = { type = "String", value = "dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com" }
 
     "user.dev.MONGO_URL"  = { type = "String", value = "mongodb://dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017/catalogue" }
-    "user.dev.DOCUMENTDB" = { type =  "String" , value = "true" }
-    "user.dev.REDIS_HOST" = { type =  "String" , value = "dev-elasticache-cluster.2tso0w.0001.use1.cache.amazonaws.com" }
+    "user.dev.DOCUMENTDB" = { type = "String" , value = "true" }
+    "user.dev.REDIS_HOST" = { type = "String" , value = "dev-elasticache-cluster.2tso0w.0001.use1.cache.amazonaws.com" }
 
 
 
