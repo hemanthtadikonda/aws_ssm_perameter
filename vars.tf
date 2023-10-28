@@ -7,10 +7,9 @@ variable "parameters" {
     "rds.dev.master_username"   = { type = "String" , value = "devrdsadmin"}
     "rds.dev.database_name"     = { type = "String" , value = "dummy"}
 
-    "user.dev.REDIS_HOST"       = { type = "String", value = "dev-elasticache-cluster.2tso0w.0001.use1.cache.amazonaws.com" }
     "cart.dev.REDIS_HOST"       = { type = "String", value = "dev-elasticache-cluster.2tso0w.0001.use1.cache.amazonaws.com" }
-    "cart.dev.CATALOGUE_HOST"   = { type = "String", value = "catalogue-dev.tadikonda.online" }
-    "cart.dev.CATALOGUE_PORT"   = { type = "String", value = "80" }
+    "cart.dev.CATALOGUE_HOST"   = { type = "String", value = "catalogue" }
+    "cart.dev.CATALOGUE_PORT"   = { type = "String", value = "8080" }
    // "shipping.dev.CART_ENDPOINT"  = { type = "String", value = "cart-dev.tadikonda.online:80" }
     "shipping.dev.DB_HOST"        = { type = "String", value = "dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com" }
 
@@ -44,6 +43,9 @@ variable "parameters" {
     "shipping.dev.CART_ENDPOINT" = { type =  "String" , value = "cart:8080" }
     "shipping.dev.DB_HOST"        = { type = "String", value = "dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com" }
 
+    "user.dev.MONGO_URL"  = { type = "String", value = "mongodb://dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017/catalogue" }
+    "user.dev.DOCUMENTDB" = { type =  "String" , value = "true" }
+    "user.dev.REDIS_HOST" = { type =  "String" , value = "dev-elasticache-cluster.2tso0w.0001.use1.cache.amazonaws.com" }
 
 
 
