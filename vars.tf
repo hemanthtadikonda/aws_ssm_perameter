@@ -32,6 +32,13 @@ variable "parameters" {
     # nexus
     "nexus.dev.username"      = { type =  "String" , value = "admin" }
     "nexus.dev.password"      = { type  = "SecureString", value = "admin123" }
+
+    # kubernetes
+    "catalogue.dev.MONGO_URL"  = { type = "String", value = "mongodb://dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017/catalogue" }
+    "catalogue.dev.DOCUMENTDB" = { type =  "String" , value = "true" }
+
+
+
   }
 }
 
