@@ -48,8 +48,6 @@ variable "parameters" {
     "user.dev.REDIS_HOST" = { type = "String" , value = "dev-elasticache-cluster.2tso0w.0001.use1.cache.amazonaws.com" }
 
 
-
-
   }
 }
 
