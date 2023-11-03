@@ -37,7 +37,7 @@ variable "parameters" {
     "catalogue.dev.DOCUMENTDB" = { type =  "String" , value = "true" }
 
 
-    "docdb.dev.schema_setup"   = { type  = "SecureString", value = "mongo --host dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017 --sslCAFile rds-combined-ca-bundle.pem --username docdbadmin --password roboshop1234" }
+    "docdb.dev.schema_setup"   = { type  = "SecureString", value = "mongo --host dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017 --sslCAFile /app/rds-combined-ca-bundle.pem --username docdbadmin --password roboshop1234" }
     "sql.dev.schema_setup"     = { type  = "SecureString", value = "mysql -h dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com -udevrdsadmin -proboshop1234" }
 
     "shipping.dev.CART_ENDPOINT" = { type = "String" , value = "cart:8080" }
