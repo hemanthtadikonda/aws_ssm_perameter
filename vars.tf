@@ -33,7 +33,7 @@ variable "parameters" {
     "nexus.dev.password"      = { type  = "SecureString", value = "admin123" }
 
     # kubernetes
-    "catalogue.dev.MONGO_URL"  = { type = "String", value = "mongodb://dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017/catalogue" }
+    "catalogue.dev.MONGO_URL"  = { type = "String", value = "mongodb://docdbadmin:roboshop1234@dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
     "catalogue.dev.DOCUMENTDB" = { type =  "String" , value = "true" }
 
 
@@ -44,7 +44,7 @@ variable "parameters" {
     "shipping.dev.CART_ENDPOINT" = { type = "String" , value = "cart:8080" }
     "shipping.dev.DB_HOST"        = { type = "String", value = "dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com" }
 
-    "user.dev.MONGO_URL"  = { type = "String", value = "mongodb://dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017/catalogue" }
+    "user.dev.MONGO_URL"  = { type = "String", value = "mongodb://docdbadmin:roboshop1234@dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
     "user.dev.DOCUMENTDB" = { type = "String" , value = "true" }
     "user.dev.REDIS_HOST" = { type = "String" , value = "dev-elasticache-cluster.2tso0w.0001.use1.cache.amazonaws.com" }
 
