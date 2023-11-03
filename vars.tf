@@ -19,8 +19,8 @@ variable "parameters" {
     "payment.dev.USER_PORT"  = { type = "String", value = "8080" }
     "payment.dev.AMQP_HOST"  = { type = "String", value = "rabbitmq-dev.tadikonda.online" }
 
-    "rabbitmq.dev.AMQP_USER"  = { type = "String", value = "roboshop" }
-    "rabbitmq.dev.AMQP_PASS"  = { type = "SecureString", value = "roboshop123" }
+    "payment.dev.AMQP_USER"  = { type = "String", value = "roboshop" }
+    "payment.dev.AMQP_PASS"  = { type = "SecureString", value = "roboshop123" }
 
 
     ## Usually the passwords are not at all preferred to keep under git repo., Usually in orgs we always create passwords in manual way whomever have access. In class we keep it here for easy reference
