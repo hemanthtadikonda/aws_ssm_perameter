@@ -9,14 +9,14 @@ variable "parameters" {
 
     "cart.dev.REDIS_HOST"       = { type = "String", value = "dev-elasticache-cluster.2tso0w.0001.use1.cache.amazonaws.com" }
     "cart.dev.CATALOGUE_HOST"   = { type = "String", value = "catalogue" }
-    "cart.dev.CATALOGUE_PORT"   = { type = "String", value = "8080" }
+    "cart.dev.CATALOGUE_PORT"   = { type = "String", value = "80" }
    // "shipping.dev.CART_ENDPOINT"  = { type = "String", value = "cart-dev.tadikonda.online:80" }
     "shipping.dev.DB_HOST"        = { type = "String", value = "dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com" }
 
     "payment.dev.CART_HOST"  = { type = "String", value = "cart" }
-    "payment.dev.CART_PORT"  = { type = "String", value = "8080" }
+    "payment.dev.CART_PORT"  = { type = "String", value = "80" }
     "payment.dev.USER_HOST"  = { type = "String", value = "user" }
-    "payment.dev.USER_PORT"  = { type = "String", value = "8080" }
+    "payment.dev.USER_PORT"  = { type = "String", value = "80" }
     "payment.dev.AMQP_HOST"  = { type = "String", value = "rabbitmq-dev.tadikonda.online" }
 
     "payment.dev.AMQP_USER"  = { type = "String", value = "roboshop" }
@@ -41,7 +41,7 @@ variable "parameters" {
 
     "sql.dev.schema_setup"     = { type  = "SecureString", value = "mysql -h dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com -udevrdsadmin -proboshop1234" }
 
-    "shipping.dev.CART_ENDPOINT" = { type = "String" , value = "cart:8080" }
+    "shipping.dev.CART_ENDPOINT" = { type = "String" , value = "cart:80" }
     "shipping.dev.DB_HOST"        = { type = "String", value = "dev-mysql-rds-cluster.cluster-cec9yfajj5ic.us-east-1.rds.amazonaws.com" }
 
     "user.dev.MONGO_URL"  = { type = "String", value = "mongodb://docdbadmin:roboshop1234@dev-docdb-cluster.cluster-cec9yfajj5ic.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
